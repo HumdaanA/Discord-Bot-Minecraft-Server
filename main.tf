@@ -81,6 +81,11 @@ resource "aws_lambda_function" "minecraft_control_lambda" {
 //
 // I configured the API (protocol), integration with the lambda function (start and stop action),
 // and the route
+//
+// This API Gateway exposes the Lambda function as a RESTful HTTP API.
+
+Endpoint: /minecraft
+Parameters: action=start or action=stop to control the Minecraft server.
 
 resource "aws_apigatewayv2_api" "minecraft_api" {
   name          = "MinecraftControlAPI"
