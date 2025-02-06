@@ -1,10 +1,15 @@
+# This is the PYTHON code for the discord bot
+
+# in order to use it, you have to go to the Discord Developer Portal and create a new application
+# there, you can create a bot and invite it to your discord server
+
 
 
 import discord
 import requests
 
-TOKEN = '[MY DISCORD BOT TOKEN]'   // left out my API Gateway URL & Discord Token
-API_GATEWAY_URL = '[MY API GATEWAY URL]'
+TOKEN = 'DISCORD_BOT_TOKEN'   # Discord Bot token and API Gateway URL set up in ENV Variables
+API_GATEWAY_URL = 'API_GATEWAY_URL'
 
 intents = discord.Intents.default()
 intents.messages = True
