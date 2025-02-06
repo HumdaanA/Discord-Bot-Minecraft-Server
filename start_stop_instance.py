@@ -1,11 +1,15 @@
 
+// This here is the code for the lambda function, that will be integrated with API gateway which waits for either a stop action
+// or a start action, and then execute accoridingly
+
+
 import boto3
 import json
 
 ec2 = boto3.client('ec2')
 
 def lambda_handler(event, context):
-    instance_id = 'YOUR_INSTANCE_ID'
+    instance_id = '[MY INSTANCE-ID FOR MINECRAFT SERVER INSTANCE]'  // i left out the ID of the minecraft server instance
     action = event['queryStringParameters']['action']
 
     if action == 'start':
