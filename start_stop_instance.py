@@ -1,8 +1,4 @@
 
-// This here is the code for the lambda function, that will be integrated with API gateway which waits for either a stop action
-// or a start action, and then execute accoridingly
-
-
 import boto3
 import json
 
