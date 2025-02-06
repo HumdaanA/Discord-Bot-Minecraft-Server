@@ -1,0 +1,12 @@
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+__pycache__/
+*.pyc
+
+.vscode/
+*.code-workspace
+
+.DS_Store
+Thumbs.db
