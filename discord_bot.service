@@ -1,6 +1,10 @@
 /*
-    I used this code when I SSH into the discord bot instance
-    so that the discord bot can be ran persistantly
+
+The Discord bot will run as a persistent service on the EC2 instance. The Terraform script includes a systemd service file to ensure the bot starts automatically upon system boot and remains running.
+
+This service file is automatically deployed through Terraform to the EC2 instance running the Discord bot.
+The bot will start on boot and run continuously in the background.
+
 */
 
 
