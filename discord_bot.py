@@ -3,8 +3,8 @@
 import discord
 import requests
 
-TOKEN = 'YOUR_DISCORD_BOT_TOKEN'
-API_GATEWAY_URL = 'YOUR_API_GATEWAY_ENDPOINT'
+TOKEN = '[MY DISCORD BOT TOKEN]'   // left out my API Gateway URL & Discord Token
+API_GATEWAY_URL = '[MY API GATEWAY URL]'
 
 intents = discord.Intents.default()
 intents.messages = True
