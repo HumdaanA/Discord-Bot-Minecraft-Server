@@ -53,7 +53,7 @@ resource "aws_instance" "discord_bot_instance" {
       "pip3 install discord requests",
       "mkdir -p /home/ec2-user/discord_bot",
       "cd /home/ec2-user/discord_bot",
-      "echo 'YOUR_DISCORD_BOT_CODE' > discord_bot.py",
+      "echo 'DISCORD_BOT_CODE' > discord_bot.py",
       "nohup python3 discord_bot.py &"
     ]
     connection {
